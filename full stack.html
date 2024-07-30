@@ -1,0 +1,23 @@
+<html>
+<head>
+<script>
+function validateForm(){
+var username=document.forms["Login Form"]["User name"].value;
+var password=document.forms["Login Form"]["password"].value;
+if (username==""||password==""){
+alert("Both username and password must br filled out"):
+return false;
+}
+alert("Successfully logged in");
+return true;
+}
+</script>
+</head>
+<body>
+<form name="loginForm" onsubmit="return validateForm()">
+Username:<input type="text" name="username" ><br>
+Password:<input type="password" name="password" ><br>
+<input type="submit" value="Login">
+</form>
+</body>
+</html>
